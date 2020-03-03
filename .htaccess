@@ -8,3 +8,7 @@ RewriteCond %{REQUEST_URI} !(\.[a-zA-Z0-9]{1,5}|/)$
 RewriteRule (.*)$ /$1/ [R=301,L]
 DirectoryIndex index.html
 RewriteRule . /index.php [L]
+RewriteEngine On 
+RewriteCond %{SERVER_PORT} 80 
+RewriteCond %{REQUEST_URI} folder 
+RewriteRule ^(.*)$ https://slofs.me/$1 [R,L]
