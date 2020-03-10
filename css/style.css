@@ -113,6 +113,7 @@ a {
 
 .killFeed {
   margin-top: 15px;
+  margin-bottom: 15px;
   min-width: 170px;
   position: relative;
   display: inline-block;
