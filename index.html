@@ -1,404 +1,49 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>slofs </title>
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - Slofs</title>
     <link rel="stylesheet" href="css/style.css">
-	
-    <script type="text/javascript">
-        var titleText = document.title;
-
-        function titleMarquee() {
-            titleText = titleText.substring(1, titleText.length) + titleText.substring(0, 1);
-            document.title = titleText;
-            setTimeout("titleMarquee()", 450);
-        }
-    </script>
-	<style>
-		body{
-			padding:0;
-			margin:0;
-			overflow:hidden;
-            background-image:url('images/1.png');
-			background-position: center center;
-			background-repeat: no-repeat;
-			background-size: cover;
-		}
-
-		div.btnbg {
-			position:center;
-		}
-	</style>
 </head>
+<body class="home-page">
+    <header>
+        <nav>
+            <div class="button-container">
+                <button class="button home-button" onclick="location.href='index.html'">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 1024 1024" stroke-width="0" fill="currentColor" stroke="currentColor" class="icon">
+                        <path d="M946.5 505L560.1 118.8l-25.9-25.9a31.5 31.5 0 0 0-44.4 0L77.5 505a63.9 63.9 0 0 0-18.8 46c.4 35.2 29.7 63.3 64.9 63.3h42.5V940h691.8V614.3h43.4c17.1 0 33.2-6.7 45.3-18.8a63.6 63.6 0 0 0 18.7-45.3c0-17-6.7-33.1-18.8-45.2zM568 868H456V664h112v204zm217.9-325.7V868H632V640c0-22.1-17.9-40-40-40H432c-22.1 0-40 17.9-40 40v228H238.1V542.3h-96l370-369.7 23.1 23.1L882 542.3h-96.1z"></path>
+                    </svg>
+                </button>
+                <button class="button socials-button"  onclick="location.href='socials.html'">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" aria-hidden="true" viewBox="0 0 24 24" stroke-width="1" fill="none" stroke="currentColor" class="icon">
+                        <path d="M12.02 0c6.614.011 11.98 5.383 11.98 12 0 6.623-5.376 12-12 12-6.623 0-12-5.377-12-12 0-6.617 5.367-11.989 11.981-12h.039zm3.694 16h-7.427c.639 4.266 2.242 7 3.713 7 1.472 0 3.075-2.734 3.714-7m6.535 0h-5.523c-.426 2.985-1.321 5.402-2.485 6.771 3.669-.76 6.671-3.35 8.008-6.771m-14.974 0h-5.524c1.338 3.421 4.34 6.011 8.009 6.771-1.164-1.369-2.059-3.786-2.485-6.771m-.123-7h-5.736c-.331 1.166-.741 3.389 0 6h5.736c-.188-1.814-.215-3.925 0-6m8.691 0h-7.685c-.195 1.8-.225 3.927 0 6h7.685c.196-1.811.224-3.93 0-6m6.742 0h-5.736c.062.592.308 3.019 0 6h5.736c.741-2.612.331-4.835 0-6m-12.825-7.771c-3.669.76-6.671 3.35-8.009 6.771h5.524c.426-2.985 1.321-5.403 2.485-6.771m5.954 6.771c-.639-4.266-2.242-7-3.714-7-1.471 0-3.074 2.734-3.713 7h7.427zm-1.473-6.771c1.164 1.368 2.059 3.786 2.485 6.771h5.523c-1.337-3.421-4.339-6.011-8.008-6.771"></path>
+                    </svg>
+                </button>
+                <button class="button portfolio-button" onclick="location.href='portfolio.html'">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" stroke-width="0" fill="currentColor" stroke="currentColor" class="icon">
+                        <path d="M12 2.5a5.5 5.5 0 0 1 3.096 10.047 9.005 9.005 0 0 1 5.9 8.181.75.75 0 1 1-1.499.044 7.5 7.5 0 0 0-14.993 0 .75.75 0 0 1-1.5-.045 9.005 9.005 0 0 1 5.9-8.18A5.5 5.5 0 0 1 12 2.5ZM8 8a4 4 0 1 0 8 0 4 4 0 0 0-8 0Z"></path>
+                    </svg>
+                </button>
+                <button class="button hobbies-button" onclick="location.href='hobbies.html'">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" stroke="currentColor" stroke-width="32" fill="none" class="icon" width="1em" height="1em">
+                        <path d="M192 104.8c0-9.2-5.8-17.3-13.2-22.8C167.2 73.3 160 61.3 160 48c0-26.5 28.7-48 64-48s64 21.5 64 48c0 13.3-7.2 25.3-18.8 34c-7.4 5.5-13.2 13.6-13.2 22.8c0 12.8 10.4 23.2 23.2 23.2l56.8 0c26.5 0 48 21.5 48 48l0 56.8c0 12.8 10.4 23.2 23.2 23.2c9.2 0 17.3-5.8 22.8-13.2c8.7-11.6 20.7-18.8 34-18.8c26.5 0 48 28.7 48 64s-21.5 64-48 64c-13.3 0-25.3-7.2-34-18.8c-5.5-7.4-13.6-13.2-22.8-13.2c-12.8 0-23.2 10.4-23.2 23.2L384 464c0 26.5-21.5 48-48 48l-56.8 0c-12.8 0-23.2-10.4-23.2-23.2c0-9.2 5.8-17.3 13.2-22.8c11.6-8.7 18.8-20.7 18.8-34c0-26.5-28.7-48-64-48s-64 21.5-64 48c0 13.3 7.2 25.3 18.8 34c7.4 5.5 13.2 13.6 13.2 22.8c0 12.8-10.4 23.2-23.2 23.2L48 512c-26.5 0-48-21.5-48-48L0 343.2C0 330.4 10.4 320 23.2 320c9.2 0 17.3 5.8 22.8 13.2C54.7 344.8 66.7 352 80 352c26.5 0 48-28.7 48-64s-21.5-64-48-64c-13.3 0-25.3 7.2-34 18.8C40.5 250.2 32.4 256 23.2 256C10.4 256 0 245.6 0 232.8L0 176c0-26.5 21.5-48 48-48l120.8 0c12.8 0 23.2-10.4 23.2-23.2z"></path>
+                    </svg>
+                </button>
+                
+            </div>
+        </nav>
+    </header>
 
-<body onload="titleMarquee()">
-<script>
-let div = document.createElement('div');
-let loop = setInterval(() => {
-	console.log(div);
-  console.clear();
-});
-Object.defineProperty(div, "id", {get: () => { 
-	clearInterval(loop);
-  document.body.innerHTML = 'open';
-}});
-</script>
-	<div id="overlay">
-		<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-	<div class="yes">
-	<div class="ss">
-		<a class="social">My Socials</a></div>
-		<div class="container">
-			<div class="killFeed">
-		<br>
-		<a href="https://steamcommunity.com/id/slofs" target="_blank">
-			<div class="button"><text class="attempt">steam</text></div>
-		</a><br>
-		<a href="https://twitter.com/slofs_" target="_blank">
-			<div class="button"><text class="attempt">twitter</text></div>
-		</a><br>
-		<a href="https://twitch.tv/slofs" target="_blank">
-			<div class="button"><text class="attempt">twitch</text></div>
-		</a><br>
-		<a href="https://discord.gg/cjtCKKb" target="_blank">
-			<div class="button"><text class="attempt">discord</text></div>
-		</a><br>
-		<a href="https://open.spotify.com/playlist/5wRrRIsWpvlOgFJwRPbaz4?si=cIkNcR6KRvKG8Fya2YfqRw" target="_blank">
-			<div class="button"><text class="attempt">spotify</text></div>
-		</a><br>
-		<a href="https://soundcloud.com/slofs" target="_blank">
-			<div class="button"><text class="attempt">soundcloud</text></div>
-		</a><br>
-				
-		<iframe width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/users/226541198&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
+    <section>
+        <h1>Welcome to My Personal Website</h1>
+        <p>This is the home page. Navigate through the sections to learn more about me.</p>
+    </section>
 
-	</div></div></div>
-		
-<div class="btnbg"></div>
-<canvas id="sakura" style="margin-top: -40em;"></canvas>
-<script src="js/main.js"></script>
-<script src="js/sylvester.js" type="text/javascript"></script>
-<script src="js/glUtils.js" type="text/javascript"></script>
-<script id="sakura_point_vsh" type="x-shader/x_vertex">
-	uniform mat4 uProjection;
-	uniform mat4 uModelview;
-	uniform vec3 uResolution;
-	uniform vec3 uOffset;
-	uniform vec3 uDOF;  //x:focus distance, y:focus radius, z:max radius
-	uniform vec3 uFade; //x:start distance, y:half distance, z:near fade start
+    <footer>
+        <p>&copy; 2024 Slofs</p>
+    </footer>
 
-
-	attribute vec3 aPosition;
-	attribute vec3 aEuler;
-	attribute vec2 aMisc; //x:size, y:fade
-
-	varying vec3 pposition;
-	varying float psize;
-	varying float palpha;
-	varying float pdist;
-
-	//varying mat3 rotMat;
-	varying vec3 normX;
-	varying vec3 normY;
-	varying vec3 normZ;
-	varying vec3 normal;
-
-	varying float diffuse;
-	varying float specular;
-	varying float rstop;
-	varying float distancefade;
-
-
-	void main(void) {
-	    // Projection is based on vertical angle
-	    vec4 pos = uModelview * vec4(aPosition + uOffset, 1.0);
-	    gl_Position = uProjection * pos;
-	    gl_PointSize = aMisc.x * uProjection[1][1] / -pos.z * uResolution.y * 0.5;
-	    
-	    pposition = pos.xyz;
-	    psize = aMisc.x;
-	    pdist = length(pos.xyz);
-
-	    palpha = smoothstep(0.0, 1.0, (pdist - 0.1) / uFade.z);
-	     
-	    vec3 elrsn = sin(aEuler);
-	    vec3 elrcs = cos(aEuler);
-	    mat3 rotx = mat3(
-	        1.0, 0.0, 0.0,
-	        0.0, elrcs.x, elrsn.x,
-	        0.0, -elrsn.x, elrcs.x
-	    );
-	    mat3 roty = mat3(
-	        elrcs.y, 0.0, -elrsn.y,
-	        0.0, 1.0, 0.0,
-	        elrsn.y, 0.0, elrcs.y
-	    );
-	    mat3 rotz = mat3(
-	        elrcs.z, elrsn.z, 0.0, 
-	        -elrsn.z, elrcs.z, 0.0,
-	        0.0, 0.0, 1.0
-	    );
-	    mat3 rotmat = rotx * roty * rotz;
-	    normal = rotmat[2];
-	    
-	    mat3 trrotm = mat3(
-	        rotmat[0][0], rotmat[1][0], rotmat[2][0],
-	        rotmat[0][1], rotmat[1][1], rotmat[2][1],
-	        rotmat[0][2], rotmat[1][2], rotmat[2][2]
-	    );
-	    normX = trrotm[0];
-	    normY = trrotm[1];
-	    normZ = trrotm[2];
-	    
-	    const vec3 lit = vec3(0.6917144638660746, 0.6917144638660746, -0.20751433915982237);
-	    
-	    float tmpdfs = dot(lit, normal);
-	    if(tmpdfs < 0.0) {
-	        normal = -normal;
-	        tmpdfs = dot(lit, normal);
-	    }
-	    diffuse = 0.4 + tmpdfs;
-	    
-	    vec3 eyev = normalize(-pos.xyz);
-	    if(dot(eyev, normal) > 0.0) {
-	        vec3 hv = normalize(eyev + lit);
-	        specular = pow(max(dot(hv, normal), 0.0), 20.0);
-	    }
-	    else {
-	        specular = 0.0;
-	    }
-	    
-	    rstop = clamp((abs(pdist - uDOF.x) - uDOF.y) / uDOF.z, 0.0, 1.0);
-	    rstop = pow(rstop, 0.5);
-	    //-0.69315 = ln(0.5)
-	    distancefade = min(1.0, exp((uFade.x - pdist) * 0.69315 / uFade.y));
-	}
-</script>
-<script id="sakura_point_fsh" type="x-shader/x_fragment">
-	#ifdef GL_ES
-	//precision mediump float;
-	precision highp float;
-	#endif
-
-	uniform vec3 uDOF;  //x:focus distance, y:focus radius, z:max radius
-	uniform vec3 uFade; //x:start distance, y:half distance, z:near fade start
-
-	const vec3 fadeCol = vec3(0.08, 0.03, 0.06);
-
-	varying vec3 pposition;
-	varying float psize;
-	varying float palpha;
-	varying float pdist;
-
-	//varying mat3 rotMat;
-	varying vec3 normX;
-	varying vec3 normY;
-	varying vec3 normZ;
-	varying vec3 normal;
-
-	varying float diffuse;
-	varying float specular;
-	varying float rstop;
-	varying float distancefade;
-
-	float ellipse(vec2 p, vec2 o, vec2 r) {
-	    vec2 lp = (p - o) / r;
-	    return length(lp) - 1.0;
-	}
-
-	void main(void) {
-	    vec3 p = vec3(gl_PointCoord - vec2(0.5, 0.5), 0.0) * 2.0;
-	    vec3 d = vec3(0.0, 0.0, -1.0);
-	    float nd = normZ.z; //dot(-normZ, d);
-	    if(abs(nd) < 0.0001) discard;
-	    
-	    float np = dot(normZ, p);
-	    vec3 tp = p + d * np / nd;
-	    vec2 coord = vec2(dot(normX, tp), dot(normY, tp));
-	    
-	    //angle = 15 degree
-	    const float flwrsn = 0.258819045102521;
-	    const float flwrcs = 0.965925826289068;
-	    mat2 flwrm = mat2(flwrcs, -flwrsn, flwrsn, flwrcs);
-	    vec2 flwrp = vec2(-abs(coord.x-0.2), coord.y) * flwrm;
-	    
-	    float r;
-	    if(flwrp.x < 0.0) {
-	        r = ellipse(flwrp, vec2(0.065, 0.024) * 0.5, vec2(0.6, 0.96) * 0.5);//0.36
-	    }
-	    else {
-	        r = ellipse(flwrp, vec2(0.065, 0.024) * 0.5, vec2(0.58, 0.96) * 0.5);
-	    }
-	    
-	    if(r > rstop) discard;
-	    
-	    vec3 col = vec3(1,1,1);//mix(vec3(1.0, 0.6, 0.9), vec3(1.0, 0.9, 0.8), r); flower's color
-	    float grady = mix(0.0, 1.0, pow(coord.y * 0.5 + 0.5, 0.35));
-	    col *= vec3(1.0, grady, grady);
-	    col *= mix(0.8, 1.0, pow(abs(coord.x), 0.3));
-	    col = col * diffuse + specular;
-	    
-	    col = mix(fadeCol, col, distancefade);
-	    
-	    float alpha = (rstop > 0.001)? (0.5 - r / (rstop * 2.0)) : 1.0;
-	    alpha = smoothstep(0.0, 1.0, alpha) * palpha;
-
-	    if(true){
-	    	gl_FragColor = vec4(col * 0.5, alpha);
-	    }
-	    
-	    
-	}
-</script>
-<!-- effects -->
-<script id="fx_common_vsh" type="x-shader/x_vertex">
-	uniform vec3 uResolution;
-	attribute vec2 aPosition;
-
-	varying vec2 texCoord;
-	varying vec2 screenCoord;
-
-	void main(void) {
-	    gl_Position = vec4(aPosition, 0.0, 1.0);
-	    texCoord = aPosition.xy * 0.5 + vec2(0.5, 0.5);
-	    screenCoord = aPosition.xy * vec2(uResolution.z, 1.0);
-	}
-</script>
-<script id="bg_fsh" type="x-shader/x_fragment">
-	#ifdef GL_ES
-	//precision mediump float;
-	precision highp float;
-	#endif
-
-	uniform vec2 uTimes;
-
-	varying vec2 texCoord;
-	varying vec2 screenCoord;
-
-	void main(void) {
-	    vec3 col;
-	    float c;
-	    vec2 tmpv = texCoord * vec2(0.8, 1.0) - vec2(0.95, 1.0);
-	    c = exp(-pow(length(tmpv) * 1.2, 2.0));
-	    col = mix(vec3(0.05, 0.0, 0.03), vec3(0.96, 0.88, 1.0) * 1.5, c);
-	    gl_FragColor = vec4(col * 0.5, 1.0);
-	}
-</script>
-<script id="fx_brightbuf_fsh" type="x-shader/x_fragment">
-	#ifdef GL_ES
-	//precision mediump float;
-	precision highp float;
-	#endif
-	uniform sampler2D uSrc;
-	uniform vec2 uDelta;
-
-	varying vec2 texCoord;
-	varying vec2 screenCoord;
-
-	void main(void) {
-	    vec4 col = texture2D(uSrc, texCoord);
-	    gl_FragColor = vec4(col.rgb * 2.0 - vec3(0.5), 1.0);
-	}
-</script>
-<script id="fx_dirblur_r4_fsh" type="x-shader/x_fragment">
-	#ifdef GL_ES
-	//precision mediump float;
-	precision highp float;
-	#endif
-	uniform sampler2D uSrc;
-	uniform vec2 uDelta;
-	uniform vec4 uBlurDir; //dir(x, y), stride(z, w)
-
-	varying vec2 texCoord;
-	varying vec2 screenCoord;
-
-	void main(void) {
-	    vec4 col = texture2D(uSrc, texCoord);
-	    col = col + texture2D(uSrc, texCoord + uBlurDir.xy * uDelta);
-	    col = col + texture2D(uSrc, texCoord - uBlurDir.xy * uDelta);
-	    col = col + texture2D(uSrc, texCoord + (uBlurDir.xy + uBlurDir.zw) * uDelta);
-	    col = col + texture2D(uSrc, texCoord - (uBlurDir.xy + uBlurDir.zw) * uDelta);
-	    gl_FragColor = col / 7.9;
-	}
-</script>
-<!-- effect fragment shader template -->
-<script id="fx_common_fsh" type="x-shader/x_fragment">
-	#ifdef GL_ES
-	//precision mediump float;
-	precision highp float;
-	#endif
-	uniform sampler2D uSrc;
-	uniform vec2 uDelta;
-
-	varying vec2 texCoord;
-	varying vec2 screenCoord;
-
-	void main(void) {
-	    gl_FragColor = texture2D(uSrc, texCoord);
-	}
-</script>
-<!-- post processing -->
-<script id="pp_final_vsh" type="x-shader/x_vertex">
-	uniform vec3 uResolution;
-	attribute vec2 aPosition;
-	varying vec2 texCoord;
-	varying vec2 screenCoord;
-	void main(void) {
-	    gl_Position = vec4(aPosition, 0.0, 1.0);
-	    texCoord = aPosition.xy * 0.5 + vec2(0.5, 0.5);
-	    screenCoord = aPosition.xy * vec2(uResolution.z, 1.0);
-	}
-</script>
-<script id="pp_final_fsh" type="x-shader/x_fragment">
-	#ifdef GL_ES
-	//precision mediump float;
-	precision highp float;
-	#endif
-	uniform sampler2D uSrc;
-	uniform sampler2D uBloom;
-	uniform vec2 uDelta;
-	varying vec2 texCoord;
-	varying vec2 screenCoord;
-	void main(void) {
-	    vec4 srccol = texture2D(uSrc, texCoord) * 2.0;
-	    vec4 bloomcol = texture2D(uBloom, texCoord);
-	    vec4 col;
-	    col = srccol + bloomcol * (vec4(1.0) + srccol);
-	    col *= smoothstep(1.0, 0.0, pow(length((texCoord - vec2(0.5)) * 2.0), 1.2) * 0.5);
-	    col = pow(col, vec4(0.45454545454545)); //(1.0 / 2.2)
-	    
-	    gl_FragColor = vec4(col.rgb, 0.0);
-	    gl_FragColor.a = 0.0;
-	}
-</script>
-
-<script id="shader-vs" type="x-shader/x-vertex">
-  attribute vec3 aVertexPosition;
-  attribute vec2 aTextureCoord;
-    
-  uniform mat4 uMVMatrix;
-  uniform mat4 uPMatrix;
-      
-  varying highp vec2 vTextureCoord;
-  
-  void main(void) {
-    gl_Position = uPMatrix * uMVMatrix * vec4(aVertexPosition, 1.0);
-    vTextureCoord = aTextureCoord;
-  }
-</script>
-
-<script id="shader-fs" type="x-shader/x-fragment">
-  varying highp vec2 vTextureCoord;
-      
-  uniform sampler2D uSampler;
-      
-  void main(void) {
-    gl_FragColor = texture2D(uSampler, vec2(vTextureCoord.s, vTextureCoord.t));
-  }
-</script>
-		
-	
-		
+    <script src="script.js"></script>
 </body>
 </html>
