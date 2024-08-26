@@ -1,10 +1,19 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: "Kanit", sans-serif;
+    font-weight: 600;
+    font-style: normal;
     margin: 0;
     padding: 0;
-    background-color: #f0f0f0;
+    background-color: #ffffff00;
     color: #333;
+    background-image: url("../images/2.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
 }
+
+
 
 header {
     background-color: #333;
@@ -17,6 +26,16 @@ nav {
     justify-content: center;
     align-items: center;
 }
+
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    filter: drop-shadow(0 0 0.75rem #dc143c);
+
+}
+
 
 .button-container {
     display: flex;
@@ -73,6 +92,13 @@ footer {
 h1 {
     font-size: 2rem;
     margin-bottom: 1rem;
+    text-align: center;
+}
+
+p {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    text-align: center;
 }
 
 ul {
@@ -165,22 +191,22 @@ a:hover {
   
 /* Home page icon color */
 .home-page .button-container .home-button .icon {
-    color: black;
+    color: #dc143c;
 }
   
 /* Socials page icon color */
 .socials-page .button-container .socials-button .icon {
-    color: black;
+    color: #dc143c;
 }
   
 /* Portfolio page icon color */
 .portfolio-page .button-container .portfolio-button .icon {
-    color: black;
+    color: #dc143c;
 }
   
 /* Hobbies page icon color */
 .hobbies-page .button-container .hobbies-button .icon {
-    color: black;
+    color: #dc143c70;
 }
 
 /* Card Container Styles */
@@ -194,7 +220,7 @@ a:hover {
 /* Card Styles */
 .card {
     --bg: #f7f7f8;
-    --hover-bg: #afd2f3;
+    --hover-bg: #dc143c86;
     --hover-text: #333;
     max-width: 23ch;
     text-align: center;
