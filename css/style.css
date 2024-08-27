@@ -187,6 +187,7 @@ a:hover {
 .icon {
     color: #fff; /* Default color, adjust as needed */
     transition: color 0.3s;
+    display: flex;
 }
   
 /* Home page icon color */
