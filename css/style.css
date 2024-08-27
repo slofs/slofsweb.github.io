@@ -306,3 +306,69 @@ a:hover {
 .card:hover > div, .card:hover > strong {
     opacity: 0;
 }
+
+
+
+
+
+
+
+/* From Uiverse.io by vinodjangid07 */ 
+.backbutton {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #333;
+    border: none;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 0px 0px 4px #ffffff;
+    cursor: pointer;
+    transition-duration: 0.3s;
+    overflow: hidden;
+    position: relative;
+    margin: 2em;
+  }
+  
+  .svgIcon {
+    width: 12px;
+    transition-duration: 0.3s;
+  }
+  
+  .svgIcon path {
+    fill: white;
+  }
+  
+  .backbutton:hover {
+    width: 140px;
+    border-radius: 50px;
+    transition-duration: 0.3s;
+    background-color: #72aadf;
+    align-items: center;
+  }
+  
+  .backbutton:hover .svgIcon {
+    opacity: 0%;
+    transition-duration: 0.3s;
+    transform: translateY(-200%);
+  }
+  
+  .backbutton::before {
+    position: absolute;
+    bottom: -20px;
+    content: "Back to Portfolio";
+    color: white;
+    /* transition-duration: .3s; */
+    font-size: 0px;
+  }
+  
+  .backbutton:hover::before {
+    font-size: 13px;
+    opacity: 1;
+    bottom: unset;
+    /* transform: translateY(-30px); */
+    transition-duration: 0.3s;
+  }
+  
