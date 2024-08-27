@@ -1,3 +1,4 @@
+
 body {
     font-family: "Kanit", sans-serif;
     font-weight: 600;
@@ -20,6 +21,8 @@ header {
     background-color: #333;
     color: #fff;
     padding: 1rem;
+    position: fixed;
+    width: 100%;
 }
 
 nav {
