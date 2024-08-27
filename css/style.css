@@ -13,6 +13,8 @@ body {
     background-attachment: fixed;
     background-size: cover;
     padding-bottom: 10rem;
+    
+
 }
 
 
@@ -23,6 +25,8 @@ header {
     padding: 1rem;
     position: fixed;
     width: 100%;
+    z-index: 1000;
+    
 }
 
 nav {
