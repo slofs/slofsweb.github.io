@@ -296,25 +296,15 @@ a:hover {
     color: #fff;
 }
 
-/* Hover, Focus, and Active states */
-.card:hover a.card-link,
-.card:focus a.card-link,
-.card:active a.card-link {
+.card:hover a.card-link {
     top: 0;
 }
 
-.card:hover,
-.card:focus,
-.card:active {
+.card:hover {
     background: var(--hover-bg);
 }
 
-.card:hover > div, 
-.card:focus > div, 
-.card:active > div,
-.card:hover > strong,
-.card:focus > strong,
-.card:active > strong {
+.card:hover > div, .card:hover > strong {
     opacity: 0;
 }
 
