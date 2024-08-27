@@ -231,7 +231,7 @@ a:hover {
     position: relative;
     overflow: hidden;
     transition: .3s cubic-bezier(.6,.4,0,1), transform .15s ease;
-    display: flex;
+    display: block;
     flex-direction: column;
     justify-content: center;
     align-items: center;
