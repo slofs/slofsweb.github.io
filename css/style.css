@@ -382,7 +382,7 @@ a:hover {
   .backbutton::before {
     position: absolute;
     bottom: -20px;
-    content: "Back to Portfolio";
+    content: "Go Back";
     color: white;
     /* transition-duration: .3s; */
     font-size: 0px;
