@@ -23,13 +23,18 @@ header {
   z-index: 1000;
   display: flex;
   justify-content: center;
+  box-sizing: border-box; /* Include padding and border in the element's total width and height */
 }
+
 
 nav {
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 100%; /* Ensure nav takes full width */
+  box-sizing: border-box; /* Include padding and border in the element's total width and height */
 }
+
 
 img {
   display: block;
