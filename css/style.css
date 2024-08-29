@@ -389,25 +389,28 @@ a:hover {
   justify-content: center;
 }
 
-.image-grid img {
-  width: 100%;
-  height: auto;
-  object-fit: cover;
-  filter: drop-shadow(0 0 0.75rem #ffffff);
-}
-
 .image-item {
-  flex: 1 1 calc(33.333% - 20px);
-  max-width: calc(33.333% - 20px);
+  flex: 1 1 calc(33.333% - 20px); /* Adjusts item size while accounting for gap */
+  max-width: calc(
+    33.333% - 20px
+  ); /* Ensures items do not exceed desired width */
   position: relative;
   overflow: hidden;
   background-color: #fff;
+  display: flex; /* Enable flexbox for centering contents */
+  align-items: center; /* Center contents vertically */
+  justify-content: center; /* Center contents horizontally */
 }
 
-.image-item:hover .overlay {
-  opacity: 1;
+/* Ensure image scales correctly */
+.image-grid img {
+  max-width: 100%; /* Prevents overflow */
+  max-height: 100%; /* Prevents overflow */
+  object-fit: cover; /* Maintain aspect ratio while covering container */
+  filter: drop-shadow(0 0 0.75rem #ffffff);
 }
 
+/* Overlay styles */
 .overlay {
   position: absolute;
   top: 0;
@@ -422,6 +425,10 @@ a:hover {
   opacity: 0;
   transition: opacity 0.3s;
   font-size: 24px;
+}
+
+.image-item:hover .overlay {
+  opacity: 1;
 }
 
 @media (max-width: 768px) {
