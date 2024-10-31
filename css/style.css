@@ -463,6 +463,7 @@ a:hover {
   height: 100%;
   overflow: hidden;
   background-color: rgba(0, 0, 0, 0.9);
+  color: white;
   justify-content: center;
   align-items: center;
 }
@@ -479,3 +480,14 @@ a:hover {
   height: auto;
   border-radius: 10px;
 }
+
+#modal-details {
+  color: white; /* Set text color to white */
+}
+
+#modal-description,
+#modal-brand,
+#modal-owner {
+  margin: 5px 0; /* Add some spacing between the text elements */
+}
+

@@ -8,27 +8,28 @@ document.addEventListener("DOMContentLoaded", (event) => {
     return;
   }
 
-  function showModal(imgSrc, imgAlt) {
+  function showModal(imgSrc, imgAlt, description, brand, owner) {
     if (imgSrc) {
-      console.log("Showing modal with image:", imgSrc);
-      modalImg.src = imgSrc;
-      modalImg.alt = imgAlt;
-      modal.style.display = "flex";
+        modalImg.src = imgSrc;
+        modalImg.alt = imgAlt;
+        document.getElementById("modal-description").textContent = description || "No description available.";
+        document.getElementById("modal-brand").textContent = brand ? `Brand: ${brand}` : "Brand: Unknown";
+        document.getElementById("modal-owner").textContent = owner ? `Owner: ${owner}` : "Owner: Unknown";
+        modal.style.display = "flex";
     }
-  }
+}
 
-  overlays.forEach((overlay) => {
-    if (overlay) {
-      overlay.addEventListener("click", () => {
-        const img = overlay.previousElementSibling;
-        if (img) {
-          showModal(img.src, img.alt);
-        }
-      });
-    }
+
+overlays.forEach((overlay, index) => {
+  overlay.addEventListener("click", () => {
+      const img = overlay.previousElementSibling;
+      const { src, alt, description, brand, owner } = images[index];
+      showModal(src, alt, description, brand, owner);
   });
+});
 
-  modal.addEventListener("click", (event) => {
+
+  modal.addEventListener("dblclick", (event) => {
     if (event.target !== modalImg) {
       modal.style.display = "none";
       modalImg.src = "";
@@ -36,6 +37,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
     }
   });
 });
+
 
 // Does the full screen image on click function
 const overlays = document.querySelectorAll(".overlay");
@@ -59,13 +61,261 @@ overlays.forEach((overlay) => {
   });
 });
 
-// Close modal when clicking outside of the image
-modal.addEventListener("click", (event) => {
-  if (event.target !== modalImg) {
-    modal.style.display = "none";
-    modalImg.src = ""; // Clear the image source
-    modalImg.alt = ""; // Clear the alt text
-  }
-});
+
 
 // End of does the full screen image on click function
+
+const images = [
+  {
+      id: 1,
+      src: "images/myrillers/Shnippy.png",
+      description: "Shnippy",
+      brand: "Brand Name 1",  // Replace with actual brand name
+      owner: "slofs"   // Replace with actual owner name
+  },
+  {
+      id: 2,
+      src: "images/myrillers/Boris.png",
+      description: "Boris",
+      brand: "Brand Name 2",  // Replace with actual brand name
+      owner: "slofs"   // Replace with actual owner name
+  },
+  {
+      id: 3,
+      src: "images/myrillers/Cyril.png",
+      description: "Cyril",
+      brand: "Brand Name 3",  // Replace with actual brand name
+      owner: "slofs"   // Replace with actual owner name
+  },
+  {
+      id: 4,
+      src: "images/myrillers/Doodad.png",
+      description: "Doodad",
+      brand: "Brand Name 4",  // Replace with actual brand name
+      owner: "slofs"   // Replace with actual owner name
+  },
+  {
+      id: 5,
+      src: "images/myrillers/Bosh.png",
+      description: "Bosh",
+      brand: "Brand Name 5",  // Replace with actual brand name
+      owner: "slofs"   // Replace with actual owner name
+  },
+  {
+      id: 6,
+      src: "images/myrillers/Blake.png",
+      description: "Blake",
+      brand: "Brand Name 6",  // Replace with actual brand name
+      owner: "slofs"   // Replace with actual owner name
+  },
+  {
+      id: 7,
+      src: "images/myrillers/Big_Mickey.png",
+      description: "Big Mickey",
+      brand: "Brand Name 7",  // Replace with actual brand name
+      owner: "slofs"   // Replace with actual owner name
+  },
+  {
+      id: 8,
+      src: "images/myrillers/Sir_Adam.png",
+      description: "Sir Adam",
+      brand: "Brand Name 8",  // Replace with actual brand name
+      owner: "slofs"   // Replace with actual owner name
+  },
+  {
+      id: 9,
+      src: "images/myrillers/Little_Gregory.png",
+      description: "Little Gregory",
+      brand: "Brand Name 9",  // Replace with actual brand name
+      owner: "slofs"   // Replace with actual owner name
+  },
+  {
+      id: 10,
+      src: "images/myrillers/Gramps.png",
+      description: "Gramps",
+      brand: "Brand Name 10", // Replace with actual brand name
+      owner: "slofs"  // Replace with actual owner name
+  },
+  {
+      id: 11,
+      src: "images/myrillers/Gumbo.png",
+      description: "Gumbo",
+      brand: "Brand Name 11", // Replace with actual brand name
+      owner: "slofs"  // Replace with actual owner name
+  },
+  {
+      id: 12,
+      src: "images/myrillers/Simon.png",
+      description: "Simon",
+      brand: "Brand Name 12", // Replace with actual brand name
+      owner: "slofs"  // Replace with actual owner name
+  },
+  {
+      id: 13,
+      src: "images/myrillers/Jeremy.png",
+      description: "Jeremy",
+      brand: "Brand Name 13", // Replace with actual brand name
+      owner: "slofs"  // Replace with actual owner name
+  },
+  {
+      id: 14,
+      src: "images/myrillers/Todd.PNG",
+      description: "Todd",
+      brand: "Brand Name 14", // Replace with actual brand name
+      owner: "slofs"  // Replace with actual owner name
+  },
+  {
+      id: 15,
+      src: "images/myrillers/Sheena.png",
+      description: "Sheena",
+      brand: "Brand Name 15", // Replace with actual brand name
+      owner: "slofs"  // Replace with actual owner name
+  },
+  {
+      id: 16,
+      src: "images/myrillers/Friendly_John.png",
+      description: "Friendly John",
+      brand: "Brand Name 16", // Replace with actual brand name
+      owner: "slofs"  // Replace with actual owner name
+  },
+  {
+      id: 17,
+      src: "images/myrillers/Mr_Thinks.JPEG",
+      description: "Mr Thinks",
+      brand: "Brand Name 17", // Replace with actual brand name
+      owner: "slofs"  // Replace with actual owner name
+  },
+  {
+      id: 18,
+      src: "images/myrillers/Mr_Stinks.JPEG",
+      description: "Mr Stinks",
+      brand: "Brand Name 18", // Replace with actual brand name
+      owner: "slofs"  // Replace with actual owner name
+  },
+  {
+      id: 19,
+      src: "images/myrillers/Brutus.JPEG",
+      description: "Brutus",
+      brand: "Brand Name 19", // Replace with actual brand name
+      owner: "slofs"  // Replace with actual owner name
+  },
+  {
+      id: 20,
+      src: "images/myrillers/Tang.JPG",
+      description: "Tang",
+      brand: "Brand Name 20", // Replace with actual brand name
+      owner: "slofs"  // Replace with actual owner name
+  },
+  {
+      id: 21,
+      src: "images/myrillers/Plum.JPG",
+      description: "Plum",
+      brand: "Brand Name 21", // Replace with actual brand name
+      owner: "slofs"  // Replace with actual owner name
+  },
+  {
+      id: 22,
+      src: "images/myrillers/Mrs_Fluf.JPG",
+      description: "Mrs Fluf",
+      brand: "Brand Name 22", // Replace with actual brand name
+      owner: "slofs"  // Replace with actual owner name
+  },
+  {
+      id: 23,
+      src: "images/myrillers/Pepe.JPG",
+      description: "Pepe",
+      brand: "Brand Name 23", // Replace with actual brand name
+      owner: "slofs"  // Replace with actual owner name
+  },
+  {
+      id: 24,
+      src: "images/myrillers/Duss_Tee.JPG",
+      description: "Duss Tee",
+      brand: "Brand Name 24", // Replace with actual brand name
+      owner: "slofs"  // Replace with actual owner name
+  },
+  {
+      id: 25,
+      src: "images/myrillers/Django.JPG",
+      description: "Django",
+      brand: "Brand Name 25", // Replace with actual brand name
+      owner: "slofs"  // Replace with actual owner name
+  },
+  {
+      id: 26,
+      src: "images/myrillers/Dean.JPG",
+      description: "Dean",
+      brand: "Brand Name 26", // Replace with actual brand name
+      owner: "slofs"  // Replace with actual owner name
+  },
+  {
+      id: 27,
+      src: "images/myrillers/Beastie.JPG",
+      description: "Beastie",
+      brand: "Brand Name 27", // Replace with actual brand name
+      owner: "slofs"  // Replace with actual owner name
+  },
+  {
+      id: 28,
+      src: "images/myrillers/Bob.jpg",
+      description: "Bob",
+      brand: "Brand Name 28", // Replace with actual brand name
+      owner: "slofs"  // Replace with actual owner name
+  },
+  {
+      id: 29,
+      src: "images/myrillers/Lando.png",
+      description: "Lando",
+      brand: "Brand Name 29", // Replace with actual brand name
+      owner: "slofs"  // Replace with actual owner name
+  },
+  {
+      id: 30,
+      src: "images/myrillers/Walter.jpg",
+      description: "Walter",
+      brand: "Brand Name 30", // Replace with actual brand name
+      owner: "slofs"  // Replace with actual owner name
+  },
+  {
+      id: 31,
+      src: "images/myrillers/Billy.webp",
+      description: "Billy Blemmer",
+      brand: "Brand Name 31", // Replace with actual brand name
+      owner: "slofs"  // Replace with actual owner name
+  },
+  {
+      id: 32,
+      src: "images/myrillers/lilyapper.png",
+      description: "Lil Yapper",
+      brand: "Brand Name 32", // Replace with actual brand name
+      owner: "slofs"  // Replace with actual owner name
+  },
+  {
+      id: 33,
+      src: "images/placeholder.webp",
+      description: "Placeholder",
+      brand: "Brand Name 33", // Replace with actual brand name
+      owner: "slofs",  // Replace with actual owner name
+      name: "Coming Soooon"  // This could be included if needed
+  },
+];
+
+
+const imageGrid = document.getElementById("imageGrid");
+
+images.forEach(image => {
+  const imageItem = document.createElement("div");
+  imageItem.className = "image-item";
+
+  const img = document.createElement("img");
+  img.src = image.src;
+  img.alt = image.alt;
+
+  const overlay = document.createElement("div");
+  overlay.className = "overlay";
+  overlay.textContent = image.name || image.alt; // Use name if provided, otherwise fallback to alt text
+
+  imageItem.appendChild(img);
+  imageItem.appendChild(overlay);
+  imageGrid.appendChild(imageItem);
+});
