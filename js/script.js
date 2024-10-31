@@ -20,6 +20,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
 }
 
 
+
 overlays.forEach((overlay, index) => {
   overlay.addEventListener("click", () => {
       const img = overlay.previousElementSibling;
@@ -134,7 +135,7 @@ const images = [
       id: 9,
       src: "images/myrillers/Little_Gregory.png",
       description: "Little Gregory",
-      brand: "Brand Name 9",  // Replace with actual brand name
+      brand: "Planet Hollywood",  // Replace with actual brand name
       owner: "slofs",   // Replace with actual owner name
       name: "Little Gregory"
   },
@@ -254,7 +255,7 @@ const images = [
       id: 24,
       src: "images/myrillers/Duss_Tee.JPG",
       description: "Duss Tee",
-      brand: "Brand Name 24", // Replace with actual brand name
+      brand: "PMS", // Replace with actual brand name
       owner: "slofs",  // Replace with actual owner name
       name: "Duss Tee"
   },
@@ -302,7 +303,7 @@ const images = [
       id: 30,
       src: "images/myrillers/Walter.jpg",
       description: "Walter",
-      brand: "Brand Name 30", // Replace with actual brand name
+      brand: "Grove International", // Replace with actual brand name
       owner: "slofs",  // Replace with actual owner name
       name: "Walter"
   },
@@ -310,7 +311,7 @@ const images = [
       id: 31,
       src: "images/myrillers/Billy.webp",
       description: "Billy Blemmer",
-      brand: "Brand Name 31", // Replace with actual brand name
+      brand: "Lemon Tree Lane", // Replace with actual brand name
       owner: "slofs",  // Replace with actual owner name
       name: "Billy Blemmer"
   },
@@ -318,7 +319,7 @@ const images = [
       id: 32,
       src: "images/myrillers/lilyapper.png",
       description: "Lil Yapper",
-      brand: "Brand Name 32", // Replace with actual brand name
+      brand: "Planet Hollywood", // Replace with actual brand name
       owner: "slofs",  // Replace with actual owner name
       name: "Lil Yapper"
   },
