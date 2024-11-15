@@ -331,6 +331,30 @@ const images = [
       owner: "slofs",  // Replace with actual owner name
       name: "Andre"
   },
+  {
+    id: 34,
+    src: "images/placeholder.webp",
+    description: "Placeholder",
+    brand: "Brand Name 33", // Replace with actual brand name
+    owner: "slofs",  // Replace with actual owner name
+    name: "Placeholder"
+},
+{
+    id: 35,
+    src: "images/placeholder.webp",
+    description: "Placeholder",
+    brand: "Brand Name 33", // Replace with actual brand name
+    owner: "slofs",  // Replace with actual owner name
+    name: "Placeholder"
+},
+{
+    id: 36,
+    src: "images/placeholder.webp",
+    description: "Placeholder",
+    brand: "Brand Name 33", // Replace with actual brand name
+    owner: "slofs",  // Replace with actual owner name
+    name: "Placeholder"
+},
 ];
 
 
