@@ -333,11 +333,11 @@ const images = [
   },
   {
     id: 34,
-    src: "images/placeholder.webp",
-    description: "Placeholder",
-    brand: "Brand Name 33", // Replace with actual brand name
+    src: "images/myrillers/Leopold.png",
+    description: "Leopold",
+    brand: "N/A", // Replace with actual brand name
     owner: "slofs",  // Replace with actual owner name
-    name: "Placeholder"
+    name: "Leopold"
 },
 {
     id: 35,
