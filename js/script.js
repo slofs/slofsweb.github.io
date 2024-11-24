@@ -341,6 +341,30 @@ const images = [
 },
 {
     id: 35,
+    src: "images/myrillers/Daryl.jpg",
+    description: "Daryl",
+    brand: "C.P.L Newark UK", // Replace with actual brand name
+    owner: "slofs",  // Replace with actual owner name
+    name: "Daryl"
+},
+{
+    id: 36,
+    src: "images/myrillers/Daryl_Jr.jpg",
+    description: "Daryl Jr",
+    brand: "N/A", // Replace with actual brand name
+    owner: "slofs",  // Replace with actual owner name
+    name: "Daryl Jr"
+},
+{
+    id: 37,
+    src: "images/myrillers/Timmy_Blemmer.jpg",
+    description: "Timmy Blemmer",
+    brand: "Lemon Tree Lane", // Replace with actual brand name
+    owner: "slofs",  // Replace with actual owner name
+    name: "Timmy Blemmer"
+},
+{
+    id: 38,
     src: "images/placeholder.webp",
     description: "Placeholder",
     brand: "Brand Name 33", // Replace with actual brand name
@@ -348,7 +372,15 @@ const images = [
     name: "Placeholder"
 },
 {
-    id: 36,
+    id: 39,
+    src: "images/placeholder.webp",
+    description: "Placeholder",
+    brand: "Brand Name 33", // Replace with actual brand name
+    owner: "slofs",  // Replace with actual owner name
+    name: "Placeholder"
+},
+{
+    id: 40,
     src: "images/placeholder.webp",
     description: "Placeholder",
     brand: "Brand Name 33", // Replace with actual brand name
