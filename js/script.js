@@ -365,11 +365,11 @@ const images = [
 },
 {
     id: 38,
-    src: "images/placeholder.webp",
-    description: "Placeholder",
-    brand: "Brand Name 33", // Replace with actual brand name
+    src: "images/myrillers/chef_boyardee.jpg",
+    description: "Chef Boyardee",
+    brand: "Tebro", // Replace with actual brand name
     owner: "slofs",  // Replace with actual owner name
-    name: "Placeholder"
+    name: "Chef Boyardee"
 },
 {
     id: 39,
