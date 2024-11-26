@@ -365,7 +365,7 @@ const images = [
 },
 {
     id: 38,
-    src: "images/myrillers/chef_boyardee.jpg",
+    src: "images/myrillers/chef_boyardee.png",
     description: "Chef Boyardee",
     brand: "Tebro", // Replace with actual brand name
     owner: "slofs",  // Replace with actual owner name
