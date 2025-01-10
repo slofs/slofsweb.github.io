@@ -373,14 +373,30 @@ const images = [
 },
 {
     id: 39,
-    src: "images/placeholder.webp",
-    description: "Placeholder",
-    brand: "Brand Name 33", // Replace with actual brand name
+    src: "images/myrillers/golden_graham.jpg",
+    description: "Golden Graham",
+    brand: "Cuddle Wit", // Replace with actual brand name
     owner: "slofs",  // Replace with actual owner name
-    name: "Placeholder"
+    name: "Golden Graham"
 },
 {
     id: 40,
+    src: "images/myrillers/Moe.webp",
+    description: "Moe",
+    brand: "N/A", // Replace with actual brand name
+    owner: "slofs",  // Replace with actual owner name
+    name: "Moe"
+},
+{
+    id: 41,
+    src: "images/myrillers/Hank.jpg",
+    description: "Hank",
+    brand: "PMS", // Replace with actual brand name
+    owner: "slofs",  // Replace with actual owner name
+    name: "Hank"
+},
+{
+    id: 42,
     src: "images/placeholder.webp",
     description: "Placeholder",
     brand: "Brand Name 33", // Replace with actual brand name
