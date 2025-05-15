@@ -413,11 +413,11 @@ const images = [
 },
 {
     id: 44,
-    src: "images/placeholder.webp",
-    description: "Placeholder",
-    brand: "Brand Name 33", // Replace with actual brand name
+    src: "images/myrillers/Hoover.jpg",
+    description: "Hoover Blemmer",
+    brand: "Lemon Tree Lane", // Replace with actual brand name
     owner: "slofs",  // Replace with actual owner name
-    name: "Placeholder"
+    name: "Hoover Blemmer"
 },
 {
     id: 45,
