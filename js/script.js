@@ -397,6 +397,30 @@ const images = [
 },
 {
     id: 42,
+    src: "images/myrillers/Steve.jpg",
+    description: "Steve",
+    brand: "Grove International", // Replace with actual brand name
+    owner: "slofs",  // Replace with actual owner name
+    name: "Steve"
+},
+{
+    id: 43,
+    src: "images/myrillers/Jungle.jpg",
+    description: "Jungle",
+    brand: "Grove International", // Replace with actual brand name
+    owner: "slofs",  // Replace with actual owner name
+    name: "Jungle"
+},
+{
+    id: 44,
+    src: "images/placeholder.webp",
+    description: "Placeholder",
+    brand: "Brand Name 33", // Replace with actual brand name
+    owner: "slofs",  // Replace with actual owner name
+    name: "Placeholder"
+},
+{
+    id: 45,
     src: "images/placeholder.webp",
     description: "Placeholder",
     brand: "Brand Name 33", // Replace with actual brand name
