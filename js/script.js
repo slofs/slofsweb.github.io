@@ -421,6 +421,22 @@ const images = [
 },
 {
     id: 45,
+    src: "images/myrillers/The_Thinker.jpg",
+    description: "The Thinker",
+    brand: "N/A", // Replace with actual brand name
+    owner: "slofs",  // Replace with actual owner name
+    name: "The Thinker"
+},
+{
+    id: 46,
+    src: "images/placeholder.webp",
+    description: "Placeholder",
+    brand: "Brand Name 33", // Replace with actual brand name
+    owner: "slofs",  // Replace with actual owner name
+    name: "Placeholder"
+},
+{
+    id: 47,
     src: "images/placeholder.webp",
     description: "Placeholder",
     brand: "Brand Name 33", // Replace with actual brand name
